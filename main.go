@@ -5,10 +5,11 @@ import (
 	"log"
 	"paper/lib"
 )
+
 func main() {
 	baseURL := "https://api.papermc.io/v2"
 	defProject := "paper"
-	defVersion := "1.18"
+	defVersion := "1.19"
 
 	var output string
 	flag.StringVar(&output, "o", ".", "path of output file")
@@ -17,7 +18,7 @@ func main() {
 	flag.StringVar(&version, "v", defVersion, "version of minecraft")
 
 	flag.Parse()
-	api := lib.PaperDownloadApi{BaseURL: baseURL,Project:defProject,Version:version}
+	api := lib.PaperDownloadApi{BaseURL: baseURL, Project: defProject, Version: version}
 
 	if !api.FileIsLatest(output) {
 
