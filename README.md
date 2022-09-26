@@ -11,6 +11,6 @@ $ go build main.go
 
 # Usage
 
-`-v "version"`: tag with a minecraft version (default: `"1.18"`.
+`-v "version"`: tag with a minecraft version (default: `"1.19.3"`.
 
 `-o /path/`: path to output the java file (default: `"."`)
