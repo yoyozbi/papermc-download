@@ -6,7 +6,7 @@ import (
 	"paper/lib"
 )
 func main() {
-	baseURL := "https://papermc.io/api/v2"
+	baseURL := "https://api.papermc.io/v2"
 	defProject := "paper"
 	defVersion := "1.18"
 
